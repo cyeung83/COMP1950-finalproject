@@ -1,0 +1,27 @@
+.lesson {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.side-nav-button {
+    display: none;
+}
+
+@media (max-width: 700px){
+    .lesson {
+        grid-template-columns: 1fr;
+    }
+
+    .side-nav-button {
+        display: block;
+    }
+
+    .lesson nav ul {
+        display: none;
+    }
+
+    .show .lesson nav ul {
+        display: block;
+    }
+
+}
