@@ -1,4 +1,4 @@
-.lesson {
+.lesson-main {
     display: grid;
     grid-template-columns: 250px 1fr;
 }
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 700px){
-    .lesson {
+    .lesson-main {
         grid-template-columns: 1fr;
     }
 
@@ -16,11 +16,11 @@
         display: block;
     }
 
-    .lesson nav ul {
+    .lesson-main nav ul {
         display: none;
     }
 
-    .show .lesson nav ul {
+    .show .lesson-main nav ul {
         display: block;
     }
 

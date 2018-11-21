@@ -9,5 +9,38 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     color: white;
-    font-size: 3.3em;
+    font-size: 4em;
+}
+
+
+.lesson-link-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.lesson {
+    border: 1px solid black;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+
+    .lesson-link-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .lesson-link-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
 }
