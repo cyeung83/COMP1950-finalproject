@@ -1,0 +1,13 @@
+.banner-image {
+    position: relative;
+    text-align: center;
+}
+
+.banner-image h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.3em;
+}
