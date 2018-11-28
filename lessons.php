@@ -1,29 +1,26 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COMP1950</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+<?php
+        $pageName = "Lessons"; 
+        include "./templates/head.php" 
+    ?>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="main-nav">
-            </nav>
-        </header>
+
+        <?php include "./templates/header.php"?>
+
         <main class="lessons">
             <h1>Lessons</h1>
             <section class="lesson-link-container">
-                <a href="lesson1.html" class="lesson lesson-1">
+                <a href="lesson1.php" class="lesson lesson-1">
                     <p>Lesson 1</p>
                 </a>
-                <a href="lesson2.html" class="lesson lesson-2">
+                <a href="lesson2.php" class="lesson lesson-2">
                     <p>Lesson 2</p>
                 </a>
-                <a href="lesson3.html" class="lesson lesson-3">
+                <a href="lesson3.php" class="lesson lesson-3">
                     <p>Lesson 3</p>
                 </a>
                 <a href="lesson4.html" class="lesson lesson-4">
@@ -55,12 +52,10 @@
                 </a>
 
             </section>
-
-
         </main>
-        <footer>
-            <p>Footer content</p>
-        </footer>
+
+        <?php include "./templates/footer.php"?>
+
     </div>
 </body>
 

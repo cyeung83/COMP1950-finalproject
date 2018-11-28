@@ -1,19 +1,15 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COMP1950-Outline</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+    <?php
+        $pageName = "Outline"; 
+        include "./templates/head.php" 
+    ?>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="main-nav">
-            </nav>
-        </header>
+        <?php include "./templates/header.php"?>
+        
         <main>
             <section class="course-outline-details">
                 <h1 class="course-title">COMP 1950 - Web Development and Design 2</h1>
@@ -107,9 +103,9 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <p>Footer content</p>
-        </footer>
+
+        <?php include "./templates/footer.php"?>
+        
     </div>
 </body>
 

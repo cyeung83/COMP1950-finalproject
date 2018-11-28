@@ -1,19 +1,17 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COMP1950</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+<?php
+    $pageName = "Lesson 1"; 
+    include "./templates/head.php" 
+?>
+
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="main-nav">
-            </nav>
-        </header>
+
+        <?php include "./templates/header.php"?>
+
         <main class="lesson-main">
             <nav class="side-nav">
                 <button class="side-nav-button" id="side-nav-button">Lessons</button>
@@ -1048,9 +1046,9 @@
                 </p>
             </section>
         </main>
-        <footer>
-            <p>Footer content</p>
-        </footer>
+
+        <?php include "./templates/footer.php"?>
+
     </div>
     <script>
 

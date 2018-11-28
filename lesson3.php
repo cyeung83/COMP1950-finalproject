@@ -1,20 +1,17 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COMP1950</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+<?php
+    $pageName = "Lesson 3"; 
+    include "./templates/head.php" 
+?>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="main-nav">
-            </nav>
-        </header>
-        <main class="lesson">
+
+        <?php include "./templates/header.php"?>
+
+        <main class="lesson-main">
             <nav class="side-nav">
                 <ul>
                     <li><a href="#0">Lesson 1</a></li>
@@ -114,15 +111,27 @@
                                 see. (Firefox: View > Page Style)</li>
                         </ul>
                     </article>
+
+                    <article>
+                        <h3>Alternate style sheets: title attribute</h3>
+                        <ul>
+                            <li>A stylesheet is "persistent" if it is linked with <strong>rel="stylesheet"</strong> and
+                                has no title attribute. All persistent stylesheets are always used when rendering</li>
+                            <li>• A stylesheet is "preferred" if it is linked with <strong>rel=</strong>rel="stylesheet"
+                                and has a title attribute. these styles will be used as the default. preferred
+                                stylesheets with the same <strong>title</strong> are grouped together</li>
+                            <li></li>
+                        </ul>
+                    </article>
                 </section>
 
 
 
             </section>
         </main>
-        <footer>
-            <p>Footer content</p>
-        </footer>
+
+        <?php include "./templates/footer.php"?>
+
     </div>
 </body>
 

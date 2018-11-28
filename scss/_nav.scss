@@ -1,11 +1,33 @@
 .main-nav {
     color: $text-color-light;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin: $space-sma;
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        padding: $space-sma;
+
+        &:hover,
+        &:visited,
+        &:active {
+            background-color: $bg-color-light;
+        }
+    }
 }
 
 .side-nav {
     color: $text-color-light;
 }
 
-.main-nav ul {
-    margin: 0;
+.btn-menu {
+    display: none;
 }
