@@ -117,16 +117,96 @@
                         <ul>
                             <li>A stylesheet is "persistent" if it is linked with <strong>rel="stylesheet"</strong> and
                                 has no title attribute. All persistent stylesheets are always used when rendering</li>
-                            <li>• A stylesheet is "preferred" if it is linked with <strong>rel=</strong>rel="stylesheet"
-                                and has a title attribute. these styles will be used as the default. preferred
-                                stylesheets with the same <strong>title</strong> are grouped together</li>
-                            <li></li>
+                            <li>• A stylesheet is "preferred" if it is linked with <strong>rel="stylesheet"</strong>
+                                and has a <strong>title</strong> attribute. these styles will be used as the default. preferred
+                                stylesheets with the same title are grouped together</li>
+                            <li>Finally, a stylesheet is "alternate" if it is linked with <strong>rel="alternate stylesheet"</strong> and has a <strong>title</strong>. 
+                                These stylesheets are supposed to allow the user to choose stylesheets, they are grouped together by <strong>title</strong> 
+                                and show up in the browser's stylesheet selector if it has one (<strong>View > Page Style</strong> in Firefox). 
+                                Each group (by <strong>title</strong>) is mutually exclusive.</li>
                         </ul>
                     </article>
+
+                    <article>
+                        <h3>Persistent Styles</h3>
+
+                        <p>Persistent styles apply in all cases, even when alternate styles are chosen.</p>
+
+                        <pre>
+                            &#x3C;!-- rel=&#x22;stylesheet&#x22; with NO title=&#x22;&#x22; --&#x3E;
+                            &#x3C;link&#x9;rel=&#x22;stylesheet&#x22; 
+                            &#x9;href=&#x22;css/persistent_styles.css&#x22; /&#x3E;
+                        </pre>
+                    </article>
+
+                    <article>
+                        <h3>Preferred Styles</h3>
+
+                        <p>Preferred styles will be the default, but will be replaced if alternate styles are chosen.</p>
+
+                        <pre>
+                            &#x3C;!-- rel=&#x22;stylesheet&#x22; AND a title=&#x22;&#x22; --&#x3E;
+                            &#x3C;link&#x9;rel=&#x22;stylesheet&#x22; 
+                            &#x9;href=&#x22;css/default_styles.css&#x22;
+                            &#x9;title=&#x22;Standard Styling&#x22;&#x9;/&#x3E;
+                        </pre>
+                    </article>
+
+                    <article>
+                        <h3>Alternate Styles</h3>
+
+                        <p>Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a <strong>title=""</strong>.</p>
+
+                        <pre>
+                            &#x3C;!-- use rel=&#x22;alternate stylesheet&#x22; for alternative stylesheets... --&#x3E;
+                            &#x3C;link&#x9;rel=&#x22;alternate stylesheet&#x22; 
+                            &#x9;href=&#x22;css/large_text.css&#x22;
+                            &#x9;title=&#x22;Large Text Styles&#x22; /&#x3E;
+                        </pre>
+                    </article>
+
+                    <article>
+                        <h3>Grouping Stylesheets</h3>
+
+                        <p>If more than one link tag shares the same <strong>title=""</strong> then they will be grouped together.</p>
+
+                        <pre>
+                            &#x3C;-- group stylesheets with shared title=&#x22;&#x22; --&#x3E;
+                            &#x3C;link&#x9;rel=&#x22;alternate stylesheet&#x22; 
+                            &#x9;href=&#x22;css/monchrome_layout.css&#x22;
+                            &#x9;title=&#x22;Monochrome Styles&#x22;&#x9;/&#x3E;
+                            &#x3C;link&#x9;rel=&#x22;alternate stylesheet&#x22; 
+                            &#x9;href=&#x22;css/monchrome_fonts.css&#x22;
+                            &#x9;title=&#x22;Monochrome Styles&#x22; &#x9;/&#x3E;
+                        </pre>
+
+                        <p>
+                        To enable alternate stylesheet switching, you can either apply some javascript to manage the switch with hyperlinks, or use 
+                        <a href="https://support.mozilla.org/en-US/questions/841578">Firefox for alternate stylesheets</a>.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>@import: Managing Multiple CSS Files</h3>
+
+                        <p>
+                            You can use the <strong>@import</strong> method to import multiple stylesheets from a basic stylesheet that you link to. 
+                            This will reduce the clutter that can sometimes occur within the <strong>&#x3C;head&#x3E;</strong> section.
+                            It is also a great place to be able to manage your CSS. From your main document, create a <strong>&#x3C;link&#x3E;</strong> to your <strong>styles.css</strong> page.
+                        </p>
+                        <p>
+                            In the body of the styles.css file, import as many files as you need:
+                        </p>
+                        <ul>
+                            <li><strong>@import url("css/type.css");</strong></li>
+                            <li><strong>@import url("css/nav.css");</strong></li>
+                            <li><strong>@import url("css/template.css");</strong></li>
+                        </ul>
+                        <p>
+                            <strong>NOTE:</strong> when using the @import directive in an external CSS file, ensure it comes before your CSS selector rules. It might be best to not include any CSS rules in a page that uses <strong>@import</strong>.
+                        </p>
+                    </article>
                 </section>
-
-
-
             </section>
         </main>
 
