@@ -1,5 +1,5 @@
-.main-nav {
-    color: $text-color-light;
+
+.main-nav { 
     display: flex;
     justify-content: flex-end;
     height: 100%;
@@ -19,9 +19,10 @@
         &:hover,
         &:visited,
         &:active {
-            background-color: $bg-color-light;
+        background-color: $bg-color-light;
         }
     }
+    
 }
 
 .side-nav {
