@@ -58,5 +58,5 @@
 
     </div>
 </body>
-
+<?php include "./templates/scripts.php"?>
 </html>

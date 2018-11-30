@@ -246,6 +246,17 @@
                         <p>
                         Browse the font server site, select the fonts you like and they wil provide you with code for a <strong>&#x3C;link /&#x3E;</strong> tag to add to your HTML. You can then use the font in your CSS.
                         </p>
+
+                        <pre>
+                        &#x3C;!-- add the link tag to the HTML --&#x3E;
+                        &#x3C;link href=&#x22;https://fonts.googleapis.com/css?family=Bungee&#x22; rel=&#x22;stylesheet&#x22; /&#x3E;&#x9;
+
+                        /* use the font in the CSS */
+                        selector{
+                        &#x9;font-family: &#x27;Bungee&#x27;, cursive;
+                        }
+                        </pre>
+                        <p>No longer stuck with 'Arial', 'Helvetica', 'Georgia' and the rest.</p>
                     </article>
                 </section>
             </section>
@@ -255,5 +266,5 @@
 
     </div>
 </body>
-
+<?php include "./templates/scripts.php"?>
 </html>
