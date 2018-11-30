@@ -13,7 +13,7 @@
         
         <main>
             <div class="banner-image">
-                <img src="images/index/computerhand-retina.jpg" alt="laptop on desk">
+                <img src="images/index/computerhand-medium.jpeg" alt="laptop on desk">
                 <h2>COMP 1950</h2>
             </div>
         </main>
