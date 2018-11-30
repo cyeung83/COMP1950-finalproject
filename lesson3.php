@@ -206,6 +206,47 @@
                             <strong>NOTE:</strong> when using the @import directive in an external CSS file, ensure it comes before your CSS selector rules. It might be best to not include any CSS rules in a page that uses <strong>@import</strong>.
                         </p>
                     </article>
+                    
+                    <article>
+                        <h3>@charset: Assigning CSS Character Set</h3>
+
+                        <p>
+                        If your CSS files only contain standard keyboard characters, assigning the character set is not required. 
+                        The CSS language itself does not use any exotic characters, so assigning a charset is often omitted. 
+                        If, however, your CSS needs to use special characters, ensuring the correct character set can be very important. 
+                        Eg: When using a pseudoclass to add content to HTML <strong>content: "Äwesome!"</strong>
+                        </p>
+                        <p>
+                        If needed, add the <strong>@charset</strong> rule to the top of the CSS document.
+                        </p>
+                        <pre>
+                        /* assign charset at top of .css file */
+                        @charset "utf-8";
+
+                        /* CSS rules follow... */    
+                        </pre>
+                    </article>
+
+                    <article>
+                        <h3>@font-face And Font Servers</h3>
+
+                        <p>Fonts that aren't available on the client machine can be provided by a third-party font server or by your website's server.</p>
+
+                        <ul>
+                            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                            <li><a href="https://fonts.adobe.com/">Adobe Typekit</a></li>
+                            <li><a href="https://www.fontsquirrel.com/">Font Squirrel</a></li>
+                            <li>Plenty more available online...</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Third Party Font Server</h3>
+
+                        <p>
+                        Browse the font server site, select the fonts you like and they wil provide you with code for a <strong>&#x3C;link /&#x3E;</strong> tag to add to your HTML. You can then use the font in your CSS.
+                        </p>
+                    </article>
                 </section>
             </section>
         </main>
