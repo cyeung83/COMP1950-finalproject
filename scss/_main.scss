@@ -11,17 +11,32 @@ main {
 }
 
 .lesson {
-    border: 1px solid black;
-    text-align: center;
-    display: block;
-    color: black;
+    background-color: #f3f300;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+    color: #3c4562;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
     text-decoration: none;
-    padding-bottom: 20px;
+    text-shadow: 0px 0px 0px #283966;
+    border: 1px solid #283966;
+    text-align: center;
     p {
         margin: {
             top: 24px;
             bottom: 24px;
         }
+    }
+
+    &:hover {
+        background-color:#e0e075;
+    }
+    
+    &:active {
+        position:relative;
+        top:1px;
     }
 }
 
