@@ -1,3 +1,5 @@
+/* Schedule Page styles */
+
 .schedule-content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -5,14 +7,35 @@
     grid-gap: 10px;
     margin: $space-sma;
     color: black;
+
+    @media (max-width: 950px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 80px repeat(6, 1fr);
+    }
+
+    @media (max-width: 650px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto;
+    }
 }
+
 .scheduled-class {
     background-color: $article-color-bg;
     color: $text-color-light;
 }
 
 .schedule-span {
-    grid-column: 1/4;
+    grid-column: 1 / 4;
+
+    @media (max-width: 950px) {
+        grid-column: 1 / 3;
+    }
+
+    @media (max-width: 650px) {
+       grid-column: 1;
+    }
 }
 
 .lesson-link {
