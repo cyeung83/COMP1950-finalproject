@@ -4,5 +4,43 @@ footer {
 
     p {
         margin: 0;
+        font-size: 0.8em;
     }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
 }
+
+footer .row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+}
+
+.one-third {
+    margin: 10px 0px 10px 30px;
+}
+
+.one-third:last-child {
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 700px) {
+footer .row {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+}
+
+.contact, .credits {
+    margin: 0px;
+}
+}
+
