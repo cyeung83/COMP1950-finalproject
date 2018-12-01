@@ -1,0 +1,33 @@
+.schedule-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.scheduled-class {
+    background-color: $bg-color-light;
+}
+
+.schedule-span {
+    grid-column: 1/4;
+}
+
+.lesson-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-date {
+    background: $accent-color;
+    border-radius: 50%;
+}
+
+.class-itinerary {
+    list-style-type: none;
+}
