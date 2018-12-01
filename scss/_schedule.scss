@@ -3,9 +3,12 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 80px repeat(4, 1fr);
     grid-gap: 10px;
+    margin: $space-sma;
+    color: black;
 }
 .scheduled-class {
-    background-color: $bg-color-light;
+    background-color: $article-color-bg;
+    color: $text-color-light;
 }
 
 .schedule-span {
@@ -14,8 +17,18 @@
 
 .lesson-link {
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    justify-items: space-between;
+    grid-gap: $space-sma;
+    color: $text-color-light;
+    height: 100%;
+
+    &:hover,
+    &:active {
+        background-color: $bg-color-light;
+        color: black;
+    }
 }
 
 .class-text-wrapper {
@@ -24,8 +37,17 @@
 }
 
 .class-date {
-    background: $accent-color;
-    border-radius: 50%;
+    color: $text-color-dark;
+    background-color: $accent-color;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .class-itinerary {

@@ -16,7 +16,7 @@
                     <h1 class="schedule-span">Course Schedule</h1>
 
                     <article class="scheduled-class">
-                        <a href="#" class="lesson-link">
+                        <a href="lesson1.php" class="lesson-link">
                             <div class="date-wrapper">
                                 <h3 class="class-date">Sep 11</h3>
                             </div>
@@ -36,7 +36,7 @@
                     </article>
 
                     <article class="scheduled-class">
-                        <a href="#" class="lesson-link">
+                        <a href="lesson2.php" class="lesson-link">
                             <div class="date-wrapper">
                                 <h3 class="class-date">Sep 18</h3>
                             </div>
@@ -53,7 +53,7 @@
                     </article>
 
                     <article class="scheduled-class">
-                        <a href="#" class="lesson-link">
+                        <a href="lesson3.php" class="lesson-link">
                             <div class="date-wrapper">
                                 <h3 class="class-date">Sep 25</h3>
                             </div>
@@ -71,7 +71,7 @@
                     <article class="scheduled-class">
                         <a href="#" class="lesson-link">
                             <div class="date-wrapper">
-                                <h3 class="class-date">Oct 2</h3>
+                                <h3 class="class-date">Oct 02</h3>
                             </div>
                             <div class="class-text-wrapper">
 
@@ -90,7 +90,7 @@
                     <article class="scheduled-class">
                         <a href="#" class="lesson-link">
                             <div class="date-wrapper">
-                                <h3 class="class-date">Oct 9</h3>
+                                <h3 class="class-date">Oct 09</h3>
                             </div>
                             <div class="class-text-wrapper">
                                 <h2 class="class-title">Day 05</h2>
@@ -156,7 +156,7 @@
                     <article class="scheduled-class">
                         <a href="#" class="lesson-link">
                             <div class="date-wrapper">
-                                <h3 class="class-date">Nov 6</h3>
+                                <h3 class="class-date">Nov 06</h3>
                             </div>
                             <div class="class-text-wrapper">
                                 <h2 class="class-title">Day 09</h2>
