@@ -12,22 +12,9 @@
         <?php include "./templates/header.php"?>
 
         <main class="lesson-main">
-            <nav class="side-nav">
-                <ul>
-                    <li><a href="#0">Lesson 1</a></li>
-                    <li><a href="#0">Lesson 2</a></li>
-                    <li><a href="#0">Lesson 3</a></li>
-                    <li><a href="#0">Lesson 4</a></li>
-                    <li><a href="#0">Lesson 5</a></li>
-                    <li><a href="#0">Lesson 9</a></li>
-                    <li><a href="#0">Lesson 7</a></li>
-                    <li><a href="#0">Lesson 8</a></li>
-                    <li><a href="#0">Lesson 9</a></li>
-                    <li><a href="#0">Lesson 10</a></li>
-                    <li><a href="#0">Lesson 11</a></li>
-                    <li><a href="#0">Lesson 12</a></li>
-                </ul>
-            </nav>
+            
+        <?php include "./templates/sidenav.php"?>
+
             <section class="lesson-content lesson-03">
                 <h1>Lesson 3</h1>
                 <section class="lesson-agenda">
