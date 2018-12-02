@@ -1,6 +1,6 @@
 <nav class="side-nav">
     <div class="side-nav-btn-wrapper">
-        <button class="side-nav-button" id="side-nav-button">Lessons</button>
+        <button class="side-nav-button" id="side-nav-button" onclick="toggleLessonsBtn(this)">Lessons</button>
     </div>
     <ul>
         <li><a href="#0">Lesson 01</a></li>
