@@ -1,31 +1,49 @@
-
+/* Main Navigation Bar Styles */
 .main-nav { 
     display: flex;
     justify-content: flex-end;
-    height: 100%;
-    padding: $space-sma;
+    height: 100px;
 
     ul {
         margin: 0;
+        padding: 0;
         display: flex;
         justify-content: flex-end;
         list-style-type: none;
+        height: 100%;
     }
 
     li {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100%;
     }
 
     a {
+        font-family: $heading-font;
+        color: black;
+        font-size: 1.2em;
         text-decoration: none;
-        padding: $space-sma;
+        text-transform: capitalize;
+        padding: 0 $space-sma;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex: 1;
 
         &:hover,
         &:visited,
         &:active {
-        background-color: $bg-color-light;
+            background-color: $bg-color-light;
+        }
+
+        &:visited {
+            color: black;
         }
     }
 
@@ -37,7 +55,7 @@
         margin: 0;
     
         ul {
-            background-color: $bg-color-light;
+            background-color: $bg-color-medium;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -46,19 +64,24 @@
             margin: 0;
         }
 
+        li {
+            width: 100%;
+        }
+
         a {
             line-height: 34px;
+            width: 100%;
+            &:hover,
+            &:visited,
+            &:active {
+                background-color: $bg-color-light;
+            }
         }
 
         &.show {
             height: auto;
         }
-    }
-    
-}
-
-.side-nav {
-    color: $text-color-light;
+    }    
 }
 
 .btn-menu {
