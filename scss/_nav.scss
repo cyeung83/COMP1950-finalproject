@@ -84,11 +84,21 @@
     }    
 }
 
-.btn-menu {
+// Hamburger menu styles
+.hamburger-menu {
     display: none;
-    margin: $space-sma;
+    margin-right: $space-sma;
 
     @media (max-width: 700px) {
         display: block;
     }
 }
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
