@@ -23,7 +23,7 @@
     text-align: center;
 
     &:hover {
-        background-color:#e0e075;
+        background-color: $accent-color-hover;
     }
     
     &:active {
@@ -41,22 +41,93 @@
     padding: 10px;
 }
 
-
 @media (max-width: 700px){
     .lesson-main {
         grid-template-columns: 1fr;
-    }
+        justify-items: center;
+       
+        .side-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
 
-    .side-nav-button {
-        display: block;
-    }
+            .side-nav-btn-wrapper {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
 
-    .lesson-main nav ul {
-        display: none;
-    }
+            .side-nav-button {
+                display: inline-block;
+                margin-top: $space-sma;
+            }
 
-    .show .lesson-main nav ul {
-        display: block;
-    }
+            ul {
+                display: none;
+            }
 
+            ul li a {
+                background-color: white;
+                display:inline-block;
+                cursor:pointer;
+                color:#3c4562;
+                font-family:Arial;
+                text-decoration:none;
+                text-align: center;
+                border: none;
+
+                &:hover,
+                &:active {
+                    background-color: $accent-color-hover;
+                }
+            }
+
+            &.show {
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(3, auto);
+                    list-style-type: none;
+
+                }
+
+                a {
+                    font-size: 1em;
+                    padding:8px 16px;
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 500px) {
+    .lesson-main {
+        .side-nav {
+            &.show {
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(4, auto);
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 360px) {
+    .lesson-main {
+        .side-nav {
+            &.show {
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(6, auto);
+                    list-style-type: none;
+                }
+            }
+        }
+    }
 }

@@ -1036,6 +1036,7 @@
         <?php include "./templates/footer.php"?>
 
     </div>
+    <!--
     <script>
 
         const body = document.body;
@@ -1048,6 +1049,7 @@
         });
 
     </script>
+    -->
 </body>
 <?php include "./templates/scripts.php"?>
 </html>

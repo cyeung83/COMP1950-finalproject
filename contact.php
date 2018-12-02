@@ -14,7 +14,7 @@
 
             <main>
                 <section class="instructor-details">
-                    <h1>Contact</h1>
+                    <h1>Instructor Contact Info</h1>
                     <p>Have questions about the course?</p>
                     <table>
                         <tr>

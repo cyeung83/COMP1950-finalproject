@@ -1,5 +1,7 @@
 <nav class="side-nav">
-    <button class="side-nav-button" id="side-nav-button">Lessons</button>
+    <div class="side-nav-btn-wrapper">
+        <button class="side-nav-button" id="side-nav-button">Lessons</button>
+    </div>
     <ul>
         <li><a href="#0">Lesson 01</a></li>
         <li><a href="#0">Lesson 02</a></li>
