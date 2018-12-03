@@ -26,6 +26,7 @@
                         <li><strong>Compact CSS</strong></li>
                         <li><strong>Advanced Selectors</strong></li>
                         <li><strong>Rule Specificity</strong></li>
+                        <li><strong>To Do</strong></li>
                     </ul>
                 </section>
 
@@ -172,6 +173,10 @@
                         <a href="https://support.mozilla.org/en-US/questions/841578">Firefox for alternate stylesheets</a>.
                         </p>
                     </article>
+                </section>
+
+                <section class="lesson-imports">
+                    <h2>Imports</h2>
 
                     <article>
                         <h3>@import: Managing Multiple CSS Files</h3>
@@ -213,7 +218,10 @@
                         /* CSS rules follow... */    
                         </pre>
                     </article>
+                </section>
 
+                <section class="lesson-fonts">
+                    <h1>Fonts</h1>
                     <article>
                         <h3>@font-face And Font Servers</h3>
 
@@ -281,11 +289,12 @@
                         </pre>
                         <b>Don't get carried away with wild font choices. Some fonts have very poor readability, reducing accessibility.</b>
                     </article>
-                </section>
-                <section class="lesson-css-measurements">
-                    <h2>Referencing CSS</h2>
+    
+                    <article>
+                        <h3>CSS Measurements</h3>
 
-                    <p>In CSS, there are a number of measurement values that can be used in declarations.</p>                    
+                        <p>In CSS, there are a number of measurement values that can be used in declarations.</p>                    
+                    </article>        
 
                     <article>
                         <h3>Size measurements</h3>
@@ -452,6 +461,151 @@
                             </ul>
                         </ul>
                     </article>
+                    
+                    <article>
+                        <h3>Descendant Selectors</h3>
+
+                        <ul>
+                            <li>Separated by a space, the last element is the one being styled</li>
+                            <li><strong>h1 em</strong> will apply rules to all em's within an h1</li>
+                            <li>You can have as many as you want: <strong>ul ol ul li</strong></li>
+                            <li>Great for specifying different styles when they apply only in certain areas</li>
+                            <li><strong>#nav a {...}</strong> will only apply these rules to Anchors within the div called nav</li>
+                            <li>Degree of separation can be infinite, so be careful</li>
+                            <li><<strong>p em</strong> will match ANY em that descends from a paragraph, no matter how nested/li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Child Selectors</h3>
+
+                        <ul>
+                            <li>Uses the > combinator to specify children</li>
+                            <li>Will select an element that is directly descended from another element</li>
+                            <li><strong>p > strong </strong>will only select a strong tag that is inside a paragraph</li>
+                            <li>Will not select a strong tag embedded in any other tag (even if it is within a paragraph)</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Adjacent Sibling Selectors</h3>
+
+                        <ul>
+                            <li>The + combinator specifies the first sibling tag following the root</li>
+                            <li>It will not include the root for styling</li>
+                            <li><strong>div + h2</strong> will select the first sibling h2 following a div tag</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>General Sibling Selectors</h3>
+
+                        <ul>
+                            <li>The ~ combinator specifies all siblings tags following the root</li>
+                            <li>It will not select sibling tags that precede the root, nor will it include the root</li>
+                            <li><strong>h1 ~ h2</strong> will select all sibling h2 tags that follow an h1</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Attribute Selectors</h3>
+
+                        <ul>
+                            <li>You can also select elements by what the element contains</li>
+                            <li>The method is: <strong>element[attribute=value]</strong></li>
+                            <li>If you specify an attribute with no value, you will match any element that simply has the attribute present (no matter what it's value is)</li>
+                            <li><strong>p[align] {color: red;}</strong> will turn red any paragraph that contains an align attribute</li>
+                            <li>Similarly, <strong>img[alt] {border: 1pt red solid; }</strong> will draw a red line around all images with an alt attribute</li>
+                            <li>You can further direct the attribute selector to find content that is at the beginning (using the carat: ^), somewhere inside (using the asterisk: *) or end of a value (using the dollar sign: $)</li>
+                            <li>
+                                <p>Attribute selector examples:</p>
+
+                                <ul>
+                                    <li><strong>img[alt]</strong> - select all img tags that have alt attributes</li>
+                                    <li><strong>img[src="images/pic.jpg"]</strong> - select img tags whose src is 'images/pic.jpg'</li>
+                                    <li><strong>img[src^="gallery/"]</strong> - select all img tags whose src BEGINS with 'gallery/'</li>
+                                    <li><strong>img[src*="logo"]</strong>- select all img tags whose src CONTAINS 'logo'</li>
+                                    <li><strong>img[src$=".png"]</strong> - select all img tags whose src ENDS with '.png'</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="lesson-rule-order-specificity">
+                    <h2>Rule Order & Specificity</h2>
+
+                    <p>
+                        When a style declaration is found to be in conflict with a previously declared style, there is a method for determining which one will win out. The process is built into every web browser, and almost all of them calculate the values identically (for once!).
+                    </p>
+                    <p>
+                        Here is how the W3C defines the process by which style order is determined:
+                    </p>
+                    
+                    <ul>
+                        <li><strong>Discover all declarations.</strong> Find all declarations that apply to the element and property in question, for the target media type. Declarations apply if the associated selector matches the element in question.</li>
+                        <li>
+                            <p><strong>Sheet Order.</strong> The primary sort of the declarations is by weight and origin: for normal declarations, author style sheets override user style sheets which override the default style sheet.</p>
+                            <ul>
+                                <li>o	Note: For "!important" declarations, user style sheets override author style sheets which override the default style sheet. "!important" declaration override normal declarations. An imported style sheet has the same origin as the style sheet that imported it.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Specificity:</strong> The secondary sort is by specificity of selector: more specific selectors will override more general ones. Pseudo-elements and pseudo-classes are counted as normal elements and classes, respectively.</li>
+                        <li><strong>Sort by Order:</strong> Finally, sort by order specified: if two rules have the same weight, origin and specificity, the latter specified wins. Rules in imported style sheets are considered to be before any rules in the style sheet itself.</li>
+                    </ul>
+
+                    <p>
+                    All of the rules are pretty straightforward, except for Specificity, which bears some explanation.
+                    <strong>Specificity</strong> is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of adding values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.
+                    </p>
+
+                    <article>
+                        <h3>Ruleset for Specificity</h3>
+
+                        <p>
+                            Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.
+                        </p>
+
+                        <ul>
+                            <ol>
+                                <li>Count the number of IDs in the selector.</li>
+                                <li>Count the number of CLASS, pseudoclass, and attribute selectors.</li>
+                                <li>Count the number of HTML tag names in the selector.</li>
+                            </ol>
+                        </ul>
+
+                        <p>
+                            Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.) The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity:
+                        </p>
+
+                        <ul>
+                            <li>#id1<br>/*<strong>id</strong>=1 <strong>class</strong>=0 <strong>HTML</strong>=0 --> specificity = 100 */</li>
+                            <li>UL UL LI.red<br>/*<strong>id</strong>=0 <strong>class</strong>=1 <strong>HTML</strong>=3 --> specificity = 013 */</li>
+                            <li>LI.red<br>/*<strong>id</strong>=0 <strong>class</strong>=1 <strong>HTML</strong>=1 --> specificity = 011 */</li>
+                            <li>LI<br>/*<strong>id</strong>=0 <strong>class</strong>=0 <strong>HTML</strong>=1 --> specificity = 001 */</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>!important rule</h3>
+
+                        <ul>
+                                <li>•	This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
+                                <li>•	It indicates that this rule should take over any previous rules that might govern a specific element.</li>
+                                <li>•	Example <strong>.selector{ color:blue !important; }</strong></li>
+                                <li>•	This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. <strong>Be careful with !important</strong></li>
+                            </ul>
+                    </article>
+                </section>
+
+                <section class="lesson-to-do">
+                    <h2>To Do</h2>
+
+                    <ul>
+                        <li>Download, review, and complete the homework assignment from <a href="https://id.bcit.ca/my.policy">D2L</a></li>
+                        <li>Find a partner for your homework.</li>
+                        <li>Practice using <a href="http://bcitcomp.ca/1950/lecture/03/#advanced_selectors">advanced CSS selectors</a></li>
+                    </ul>
                 </section>
             </section>
         </main>
