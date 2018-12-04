@@ -428,6 +428,46 @@ button:active {
   display: flex;
 }
 
+/* outline page */
+.outline-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.course {
+  background-color: red;
+  color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.description {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+.overview {
+  grid-column: 4;
+  grid-row: 2/4;
+}
+
+.goals {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.competencies {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.grading {
+  grid-column: 2;
+  grid-row: 3;
+}
+
 .contact-wrapper {
   margin: 16px 0;
   display: grid;
