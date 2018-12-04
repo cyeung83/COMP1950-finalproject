@@ -1036,20 +1036,7 @@
         <?php include "./templates/footer.php"?>
 
     </div>
-    <!--
-    <script>
 
-        const body = document.body;
-        const btn = document.getElementById('side-nav-button');
-
-        btn.addEventListener('click', function () {
-
-            body.classList.toggle('show');
-
-        });
-
-    </script>
-    -->
+    <?php include "./templates/scripts.php"?>
 </body>
-<?php include "./templates/scripts.php"?>
 </html>

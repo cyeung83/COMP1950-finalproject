@@ -104,6 +104,6 @@
             <?php include "./templates/footer.php"?>
 
         </div>
+        <?php include "./templates/scripts.php"?>
     </body>
-    <?php include "./templates/scripts.php"?>
 </html>
