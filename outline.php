@@ -77,28 +77,22 @@
                                 <h2>Grading</h2>
                                 <ul>
                                     <li>
-                                        <p>Assignments 1-7</p>
-                                        <p>20% (2.86% per assignment)</p>
+                                        <p>Assignments 1-7: 20% (2.86% per assignment)</p>
                                     </li>
                                     <li>
-                                        <p>Mid-term Project 1</p>
-                                        <p>20%</p>
+                                        <p>Mid-term Project 1: 20%</p>
                                     </li>
                                     <li>
-                                        <p>Mid-term Exam</p>
-                                        <p>10%</p>
+                                        <p>Mid-term Exam: 10%</p>
                                     </li>
                                     <li>
-                                        <p>Final Exam</p>
-                                        <p>20%</p>
+                                        <p>Final Exam: 20%</p>
                                     </li>
                                     <li>
-                                        <p>Final Group Project</p>
-                                        <p>30%</p>
+                                        <p>Final Group Project: 30%</p>
                                     </li>
                                     <li>
-                                        <p>Total</p>
-                                        <p>100%</p>
+                                        <p>Total: 100%</p>
                                     </li>
                                 </ul>
                             </article>
