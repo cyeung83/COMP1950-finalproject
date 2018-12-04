@@ -469,7 +469,7 @@ button:active {
   grid-row: 3;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 825px) {
   .outline-wrapper {
     margin: 20px;
     display: grid;
