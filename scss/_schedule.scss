@@ -8,6 +8,10 @@
     margin: $space-sma;
     color: black;
 
+    h1 {
+        @include style-h1-header;
+    }
+
     @media (max-width: 950px) {
             display: grid;
             grid-template-columns: repeat(2,1fr);
