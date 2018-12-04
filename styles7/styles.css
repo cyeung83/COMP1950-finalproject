@@ -15,6 +15,15 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+a:hover {
+  color: #b4b4b4;
+}
+
 .wrapper {
   max-width: 1200px;
   padding: 0;
@@ -432,6 +441,7 @@ button:active {
 .course-outline-details h1 {
   text-align: center;
   margin: 16px;
+  padding: 5px 10px;
 }
 
 .outline-wrapper {
