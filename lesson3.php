@@ -221,7 +221,7 @@
                 </section>
 
                 <section class="lesson-fonts">
-                    <h1>Fonts</h1>
+                    <h2>Fonts</h2>
                     <article>
                         <h3>@font-face And Font Servers</h3>
 
@@ -374,26 +374,30 @@
                         <p>Box model properties support 1, 2, 3 and 4 values. For example:</p>
 
                         <ul>
-                            <li><strong>border-width:10px;</strong></li>
+                            <li><strong>border-width:10px;</strong>
                                 <ul><li>all four borders are 10px</li></ul>
-                            <li><strong>border-width:10px 20px;</strong></li>
+                            </li>
+                            <li><strong>border-width:10px 20px;</strong>
                                 <ul>
                                     <li>top and bottom borders are 10px</li>
                                     <li>left and right borders are 20px</li>
                                 </ul>
-                            <li><strong>border-width:10px 20px 30px;</strong></li>
+                            </li>
+                            <li><strong>border-width:10px 20px 30px;</strong>
                                 <ul>
                                     <li>top border is 10px</li>
                                     <li>left and right borders are 20px</li>
                                     <li>bottom border is 30px</li>
                                 </ul>
-                            <li><strong>border-width:10px 20px 30px 40px;</strong></li>
+                            </li>
+                            <li><strong>border-width:10px 20px 30px 40px;</strong>
                                 <ul>
                                     <li>top border is 10px</li>
                                     <li>right border is 20px</li>
                                     <li>bottom border is 30px</li>
                                     <li>left border is 40px</li>
                                 </ul>
+                            </li>
                         </ul>
                         
                         <p>
@@ -439,26 +443,28 @@
                         </p>
                         <p>Best part: No <strong>span</strong> or <strong>div</strong> required to access these pseudo-elements.</p>
                         <ul>
-                            <li>Within <strong>a</strong> pseudo-elements in particular, it's important to follow a certain order:</li>
-                            <ul>
-                                <li><strong>a:link</strong></li>
-                                <li><strong>a:visited</strong></li>
-                                <li><strong>a:hover</strong></li>
-                                <li><strong>a:active</strong></li>
-                            </ul>
+                            <li>Within <strong>a</strong> pseudo-elements in particular, it's important to follow a certain order:
+                                <ul>
+                                    <li><strong>a:link</strong></li>
+                                    <li><strong>a:visited</strong></li>
+                                    <li><strong>a:hover</strong></li>
+                                    <li><strong>a:active</strong></li>
+                                </ul>
+                            </li>
                         </ul>
                         <p>Easy mnemonic: LVHA - <strong>L</strong>o<strong>V</strong>e - <strong>HA</strong>te. Because of the way that CSS applies rules, it looks at the LAST rule for a given element and applies more weight to it. For example, if you are hovering over a link, you don't want to see the link state</p>
                         <ul>
-                            <li>There are several additional <a href="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_class.htm">pseudo-classes</a> and <a href="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_element.htm">pseudo-elements</a></li>
-                            <ul>
-                                <li><strong>selector:before, selector:after</strong> - add text content before or after the selector's content</li>
-                                <li><strong>selector:first-line, selector:first-letter</strong> - style the first line or letter of the selector</li>
-                                <li><strong>selector:first-of-type, selector:last-of-type</strong> - style the first or last tag of the selector type</li>
-                                <li><strong>selector:nth-of-type(n)</strong> - select the nth() tag of the same type as selector</li>
-                                <li><strong>selector:nth-child(n)</strong> - select the nth() child</li>
-                                <li><strong>selector:nth-child(2n)</strong> - select every even numbered child</li>
-                                <li><strong>selector:nth-child(2n+1)</strong> - select every odd numbered child</li>
-                            </ul>
+                            <li>There are several additional <a href="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_class.htm">pseudo-classes</a> and <a href="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_element.htm">pseudo-elements</a>
+                                <ul>
+                                    <li><strong>selector:before, selector:after</strong> - add text content before or after the selector's content</li>
+                                    <li><strong>selector:first-line, selector:first-letter</strong> - style the first line or letter of the selector</li>
+                                    <li><strong>selector:first-of-type, selector:last-of-type</strong> - style the first or last tag of the selector type</li>
+                                    <li><strong>selector:nth-of-type(n)</strong> - select the nth() tag of the same type as selector</li>
+                                    <li><strong>selector:nth-child(n)</strong> - select the nth() child</li>
+                                    <li><strong>selector:nth-child(2n)</strong> - select every even numbered child</li>
+                                    <li><strong>selector:nth-child(2n+1)</strong> - select every odd numbered child</li>
+                                </ul>
+                            </li>
                         </ul>
                     </article>
                     
@@ -472,7 +478,7 @@
                             <li>Great for specifying different styles when they apply only in certain areas</li>
                             <li><strong>#nav a {...}</strong> will only apply these rules to Anchors within the div called nav</li>
                             <li>Degree of separation can be infinite, so be careful</li>
-                            <li><<strong>p em</strong> will match ANY em that descends from a paragraph, no matter how nested/li>
+                            <li><strong>p em</strong> will match ANY em that descends from a paragraph, no matter how nested/li>
                         </ul>
                     </article>
 
@@ -566,13 +572,11 @@
                             Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.
                         </p>
 
-                        <ul>
-                            <ol>
-                                <li>Count the number of IDs in the selector.</li>
-                                <li>Count the number of CLASS, pseudoclass, and attribute selectors.</li>
-                                <li>Count the number of HTML tag names in the selector.</li>
-                            </ol>
-                        </ul>
+                        <ol>
+                            <li>Count the number of IDs in the selector.</li>
+                            <li>Count the number of CLASS, pseudoclass, and attribute selectors.</li>
+                            <li>Count the number of HTML tag names in the selector.</li>
+                        </ol>
 
                         <p>
                             Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.) The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity:
@@ -590,11 +594,11 @@
                         <h3>!important rule</h3>
 
                         <ul>
-                                <li>•	This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
-                                <li>•	It indicates that this rule should take over any previous rules that might govern a specific element.</li>
-                                <li>•	Example <strong>.selector{ color:blue !important; }</strong></li>
-                                <li>•	This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. <strong>Be careful with !important</strong></li>
-                            </ul>
+                            <li>This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
+                            <li>It indicates that this rule should take over any previous rules that might govern a specific element.</li>
+                            <li>Example <strong>.selector{ color:blue !important; }</strong></li>
+                            <li>This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. <strong>Be careful with !important</strong></li>
+                        </ul>
                     </article>
                 </section>
 
