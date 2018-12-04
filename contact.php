@@ -39,11 +39,11 @@
                             <input class="formfield-span" type="text" id="studentnumber" name="studentnumber" placeholder="Student Number">
                             <div class="radio-wrapper formfield-span">
                                 <input type="radio" id="prospective-radio" name="studenttype" value="prospective">
-                                <label for="prospective-radio">Prospective Student</label>
+                                <label class ="radio-label" for="prospective-radio">Prospective Student</label>
                                 <input type="radio" id="current-radio" name="studenttype" value="current">
-                                <label for="current-radio">Current Student</label>
+                                <label class ="radio-label" for="current-radio">Current Student</label>
                             </div>
-                            <textarea class="formfield-span" name="message" rows=10 placeholder="Message" required></textarea>
+                            <textarea class="formfield-span" name="message" id="message" rows=10 placeholder="Message" required></textarea>
                             <button class="formsubmitbtn formfield-span" type="submit">Send</button>
                         </form>
                     </div>
