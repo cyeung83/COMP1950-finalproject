@@ -632,6 +632,10 @@ form {
   margin: 16px;
   color: black;
 }
+.schedule-content h1 {
+  text-align: center;
+  margin: 16px;
+}
 @media (max-width: 950px) {
   .schedule-content {
     display: grid;
