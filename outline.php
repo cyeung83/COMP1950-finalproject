@@ -35,6 +35,7 @@
                                 </p>
                             </article>
                             <article class="course overview">
+                                <h2>Course Overview<h2>
                                 <h3>Course Date</h3>
                                 <p>Tue Sept 11 - Tue Nov 27</p>
                                 <p>12 Weeks x 3 hour class (36 hours total)</p>
