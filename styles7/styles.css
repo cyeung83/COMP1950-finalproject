@@ -474,9 +474,20 @@ button:active {
   grid-row: 3;
 }
 
-article .overview {
+article.course.overview {
   background-color: #f3f300;
-  color: rgba(60, 69, 98, 0.4);
+  color: #3c4562;
+}
+
+article.course.goals {
+  background-color: #f3f300;
+  color: #3c4562;
+}
+
+article.course.competencies {
+  background-color: white;
+  color: #3c4562;
+  border: 1px solid #3c4562;
 }
 
 @media screen and (max-width: 825px) {
@@ -503,12 +514,12 @@ article .overview {
 @media screen and (max-width: 675px) {
   .goals {
     grid-column: 1/4;
-    grid-row: 4;
+    grid-row: 5;
   }
 
   .grading {
     grid-column: 1/4;
-    grid-row: 5;
+    grid-row: 4;
   }
 }
 .contact-wrapper {

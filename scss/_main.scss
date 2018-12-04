@@ -244,9 +244,20 @@ button:active {
     grid-row: 3;
 }
 
-article .overview {
+article.course.overview {
     background-color: $accent-color;
-    color: $bg-color-dark-opacity;
+    color: $text-color-headers;
+}
+
+article.course.goals {
+    background-color: $accent-color;
+    color: $text-color-headers;
+}
+
+article.course.competencies{
+    background-color: $wrapper-bg;
+    color: $text-color-headers;
+    border: 1px solid $text-color-headers;
 }
 
 @media screen and (max-width: 825px ) {
@@ -271,17 +282,19 @@ article .overview {
         grid-column: 2 / 4;
         grid-row: 4;
     }
+
+    
 }
 
 @media screen and (max-width: 675px ) {
     .goals {
         grid-column: 1 / 4;
-        grid-row: 4;
+        grid-row: 5;
     }
     
 
     .grading {
         grid-column: 1 / 4;
-        grid-row: 5;
+        grid-row: 4;
     }
 }
