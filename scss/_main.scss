@@ -5,8 +5,10 @@ main {
 /* lesson landing page styles start */
 
 .lesson-content {
+    margin: $space-sma;
     pre {
-        white-space: pre-line;   
+        white-space: pre-line; 
+        margin-left: $space-sma;  
     }
 }
 .lesson-link-container {
