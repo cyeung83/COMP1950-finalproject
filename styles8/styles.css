@@ -20,10 +20,6 @@ a {
   color: darkcyan;
 }
 
-a:hover {
-  color: #b4b4b4;
-}
-
 .wrapper {
   max-width: 1200px;
   padding: 0;
@@ -103,9 +99,10 @@ header .bar1, header .bar2, header .bar3 {
   align-items: center;
   align-content: center;
   flex: 1;
+  cursor: pointer;
 }
 .main-nav a:hover, .main-nav a:visited, .main-nav a:active {
-  background-color: lightgrey;
+  background-color: #e0e075;
 }
 .main-nav a:visited {
   color: black;
@@ -135,7 +132,7 @@ header .bar1, header .bar2, header .bar3 {
     width: 100%;
   }
   .main-nav a:hover, .main-nav a:visited, .main-nav a:active {
-    background-color: lightgrey;
+    background-color: #e0e075;
   }
   .main-nav.show {
     height: auto;
@@ -149,6 +146,7 @@ header .bar1, header .bar2, header .bar3 {
 @media (max-width: 700px) {
   .hamburger-menu {
     display: block;
+    cursor: pointer;
   }
 }
 
