@@ -23,7 +23,7 @@
                 <a href="lesson3.php" class="lesson lesson-3">
                     <p>Lesson 3</p>
                 </a>
-                <a href="#0" class="lesson lesson-4">
+                <a href="lesson4.php" class="lesson lesson-4">
                     <p>Lesson 4</p>
                 </a>
                 <a href="#0" class="lesson lesson-5">
