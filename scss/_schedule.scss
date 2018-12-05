@@ -46,7 +46,7 @@
     text-decoration: none;
     display: grid;
     grid-template-columns: 60px 1fr;
-    justify-items: space-between;
+    justify-content: space-between;
     grid-gap: $space-sma;
     color: $text-color-light;
     height: 100%;
