@@ -52,7 +52,7 @@ main {
 }
 
 .lessons h1 {
-    text-align: center;
+    @include style-h1-header;
 }
 
 
