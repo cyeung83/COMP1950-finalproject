@@ -45,9 +45,8 @@
 
 @media (max-width: 700px){
     .lesson-main {
-        grid-template-columns: 1fr;
-        justify-items: center;
-       
+        display: flex;
+        flex-direction: column;
         .side-nav {
             width: 100%;
             display: flex;
