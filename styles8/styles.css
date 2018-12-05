@@ -322,6 +322,9 @@ main {
 
 .lessons h1 {
   text-align: center;
+  margin: 16px;
+  padding: 5px 10px;
+  font-size: 24px;
 }
 
 /* lesson landing page styles end */
@@ -647,6 +650,8 @@ form {
 .schedule-content h1 {
   text-align: center;
   margin: 16px;
+  padding: 5px 10px;
+  font-size: 24px;
 }
 @media (max-width: 950px) {
   .schedule-content {

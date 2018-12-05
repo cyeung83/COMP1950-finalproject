@@ -46,7 +46,7 @@
                     </li>
                     <li>
                         <strong>all about you...</strong>
-                    </li>
+                    
                     <ul>
                         <li>
                             your name
@@ -57,7 +57,7 @@
                         <li>
                             what do you hope to achieve in this course? Be specific!
                         </li>
-                    </ul>
+                    </ul></li>
                 </ul>
                 <h2>Course Overview</h2>
                 <p>
@@ -116,7 +116,7 @@
                     </li>
                     <li>
                         Email your instructor this information:
-                    </li>
+                    
                     <ul>
                         <li>
                             your myBCIT email - eg: yourname123@my.BCIT.ca
@@ -127,7 +127,7 @@
                         <li>
                             a case sensitive password you will remember - ???
                         </li>
-                    </ul>
+                    </ul></li>
                     <li>
                         Take the name portion of your <strong>my.bcit.ca</strong> email address
                         and use it at the end of the URL described below (eg: if your email
@@ -177,7 +177,7 @@
                     </li>
                 </ol>
                 <p>
-                    <img src="images/lesson1/filezilla_screenshot.png">
+                    <img src="images/lesson1/filezilla_screenshot.png" alt="filezilla screenshot">
                 </p>
                 <h2>Tools</h2>
                 <h3>Visual Studio Code</h3>
@@ -239,7 +239,7 @@
                 <ul>
                     <li>
                         <a href="https://www.mozilla.org/en-US/"><strong>Mozilla</strong></a>
-                    </li>
+                    
                     <ul>
                         <li>
                             This is the platform that
@@ -269,10 +269,10 @@
                         <li>
                             Add-ons have a downside: bloat
                         </li>
-                    </ul>
+                    </ul></li>
                     <li>
                         <a href="http://www.webkit.org/"><strong>WebKit</strong></a>
-                    </li>
+                    
                     <ul>
                         <li>
                             This is the platform that gives us<a href="http://www.google.com/chrome"><strong>Chrome</strong></a>,
@@ -305,12 +305,12 @@
                             </a>
                             in Safari before accessing the developer tools
                         </li>
-                    </ul>
+                    </ul></li>
                     <li>
                         <a href="https://www.microsoft.com/en-ca/">
                             <strong>Microsoft</strong>
                         </a>
-                    </li>
+                    
                     <ul>
                         <li>
                             The vendor for
@@ -334,7 +334,7 @@
                             browser. It is one the least standards compliant of the browsers.
                             It is also no longer supported with updates.
                         </li>
-                    </ul>
+                    </ul></li>
                 </ul>
                 <p>
                     Remember to test your work in as many browsers as you can! <a href="http://browsershots.org/"><strong>BrowserShots</strong></a>
@@ -654,7 +654,7 @@
                 <ul>
                     <li>
                         File and folder names should <strong>NOT</strong> contain:
-                    </li>
+                    
                     <ul>
                         <li>
                             Capital letters
@@ -669,7 +669,7 @@
                             </strong>
                             etc...
                         </li>
-                    </ul>
+                    </ul></li>
                     <li>
                         Acceptable non-alphanumeric characters: <strong>. _ - ~</strong>
                     </li>
@@ -697,7 +697,6 @@
                         between client and server. however, some browsers may cache things like
                         the CSS, so if the styles have changed since caching the client may not
                         get the latest styles.
-                    </li>
                     <ul>
                         <li>
                             <strong>Ctrl + F5</strong>
@@ -713,7 +712,7 @@
                             </strong>
                             etc)
                         </li>
-                    </ul>
+                    </ul></li>
                     <li>
                         If there are files/pages on your server no longer being used, be sure
                         to either remove them or locate them in a place where users are not
@@ -733,23 +732,23 @@
                         <strong>.php</strong>,
                         etc)
                         <br />
-                        <img src="images/lesson1/css_commenting1.png">
+                        <img src="images/lesson1/css_commenting1.png" alt="code example">
                         <br />
-                        <img src="images/lesson1/css_commenting2.png">
+                        <img src="images/lesson1/css_commenting2.png" alt="code example">
                     </li>
                     <li>
                         In HTML, use carriage return and tabs to indicate parent-child tag
                         relationships. Likewise, code your CSS to make it easy to see which
                         rules are applied to each selector.
                         <br />
-                        <img src="images/lesson1/css_commenting3.png">
+                        <img src="images/lesson1/css_commenting3.png" alt="code example">
                     </li>
                     <li>
                         Separate different file types into folders. At minimum, keep all
                         non-html files in their own folder. If you like you can make a
                         dedicated 'html' folder for your <strong>.html</strong> files as well.
                         <br />
-                        <img src="images/lesson1/folder_structure.png">
+                        <img src="images/lesson1/folder_structure.png" alt="folder structure">
                     </li>
                     <li>
                         Use the <strong>.html</strong> extension for all HTML files (not <strong>.htm</strong>). Use
@@ -866,7 +865,7 @@
                     </li>
                     <li>
                         Some physical styles:
-                    </li>
+                    
                     <ul>
                         <li>
                             <strong>b</strong>
@@ -884,7 +883,7 @@
                             <strong>u</strong>
                             - Underline
                         </li>
-                    </ul>
+                    </ul></li>
                 </ul>
                 <p>
                     <strong>Logical Styling</strong>
@@ -904,7 +903,7 @@
                     </li>
                     <li>
                         Examples of logical styles:
-                    </li>
+                    
                     <ul>
                         <li>
                             <strong>strong</strong>
@@ -954,7 +953,7 @@
                             <strong>ins</strong>
                             - <ins>Inserted text</ins>
                         </li>
-                    </ul>
+                    </ul></li>
                 </ul>
                 <p>
                     <strong>Key Advantages Of Semantic Content</strong>
@@ -1007,7 +1006,7 @@
                         Install VS Code on your home computer or laptop. Explore some of the
                         accompanying help documentation to familiarize yourself with how to
                         code your HTML and CSS using this tool.
-                    </li>
+                    
                     <ul>
                         <li>
                             <a href="https://code.visualstudio.com/#alt-downloads">
@@ -1024,7 +1023,7 @@
                                 <strong>VS Code help documentation</strong>
                             </a>
                         </li>
-                    </ul>
+                    </ul></li>
                 </ul>
                 <p>
                     ...and yes, there will be a practical, open book quiz at the start of
