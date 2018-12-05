@@ -209,8 +209,8 @@ header .bar1, header .bar2, header .bar3 {
 
 @media (max-width: 700px) {
   .lesson-main {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .lesson-main .side-nav {
     width: 100%;
