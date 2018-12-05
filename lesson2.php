@@ -119,63 +119,59 @@
                     </ul>
                     <p><strong>XHTML Rules:</strong></p>
                     <ul>
-                        <li>All elements must be properly nested</li>
-                        <ul type="circle">
+                        <li>All elements must be properly nested
+                        <ul>
                             <li> This is not valid: <strong>&lt;p&gt;&lt;b&gt;Bolded Text&lt;/p&gt;&lt;/b&gt;</strong></li>
                             <li>This can be a problem with things like Lists &lt;ol&gt; and
                                 &lt;ul&gt;.</li>
                             <li>Especially when closing the List Item &lt;li&gt; tag that contains
                                 the &lt;ul&gt; or &lt;ol&gt; tag.</li>
-                        </ul>
-                        <li>All tags must close</li>
-                        <ul type="circle">
+                        </ul></li>
+                        <li>All tags must close
+                        <ul>
                             <li>Example: <strong>&lt;p&gt;Some text here&lt;/p&gt;</strong></li>
                             <li>Empty Elements are closed as well: <strong>&lt;br /&gt;</strong> or <strong>&lt;img src="#"
                                     /&gt;</strong></li>
                             <li>An extra space is required before the slash to work with all
                                 browsers.</li>
-                        </ul>
-                        <li>All tag names must be in lower case</li>
-                        <ul type="circle">
+                        </ul></li>
+                        <li>All tag names must be in lower case
+                        <ul>
                             <li><strong>&lt;Img Src="some_image.gif"&gt;</strong>
                                 is not valid</li>
-                        </ul>
+                        </ul></li>
                             <li>Attribute names are always in lower case
-                            </li>
-                        <ul type="circle">
+                        <ul>
                             <li><strong>&lt;p ALIGN="center"&gt;</strong>
                                 should be <strong>&lt;p align="center"&gt;</strong></li>
-                        </ul>
-                        <li>All attributes must be quoted</li>
-                        <ul type="circle">
+                        </ul></li>
+                        <li>All attributes must be quoted
+                        <ul>
                             <li>
                                 <strong>&lt;body bgcolor=black&gt;</strong>
                                 will not work, you need: <strong>&lt;body bgcolor="black"&gt;</strong>
                             </li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Attributes cannot be minimized
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li>
                                 <strong>&lt;input type="checkbox" checked&gt;</strong>
                                 cannot be used. The valid code is: <strong>&lt;input type="checkbox" checked="checked"
                                     /&gt;</strong>
                             </li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Name Attribute is no longer used (except with forms). Replace "name"
                             with "id".
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li><strong>&lt;img src="picture.gif" name="myimage" /&gt;</strong>
                                 will not validate. Use <strong>id="myimage"</strong> instead.</li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Mandatory Elements: Every XHTML document <strong>must have</strong>
                             these elements:
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li><strong>&lt;html&gt;</strong></li>
                             <li><strong>&lt;head&gt;</strong></li>
                             <li><strong>&lt;title&gt;</strong></li>
@@ -186,26 +182,24 @@
                                 there, but it is <em>part</em> of the document itself rather than
                                 an element of the document.
                             </li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Documents must be well-formed
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li>
                                 The document must conform to all of the above rules
                             </li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Optional XML declaration
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li>
                                 Not <em>required</em>, but good practice:
                             </li>
                             <li>
                                 <strong>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;</strong>
                             </li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Optional Element: An XHTML document should also declare the type and
                             character encoding in the head section to ensure the server sends the
@@ -541,8 +535,7 @@
                         <li>
                             There are also several new <strong>&lt;input&gt;</strong> type
                             attribute variants:
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li>
                                 <strong>type="email"</strong>
                                 : checkes for the pattern of emails
@@ -575,7 +568,7 @@
                                 <strong>type="pattern"</strong>
                                 : regular expression pattern matching
                             </li>
-                        </ul>
+                        </ul></li>
                     </ul>
                     <p>
                         <strong>Scaleable Vector Graphics</strong>
@@ -600,9 +593,7 @@
                         The <strong>png</strong> on the left is 26KB. The <strong>.svg</strong> on
                         the right is only 4KB.
                     </p>
-                    <p>
                     <p><img class="tabbed" src="images/lesson2/comp1950_logo.png" alt="COMP 1950 png logo"> <img class="tabbed" src="images/lesson2/comp1950_logo.svg" alt="COMP 1950 svg logo"></p>
-                    </p>
                     <p>
                         Alternatively, you can use SVG code 'inline' with the <strong>svg</strong>
                         tag. The advantage of doing this is it will result in one less
@@ -844,8 +835,7 @@
                         <li>
                             To ensure early versions of Internet Explorer will render HTML5 tags
                             correctly, you can add the HTML5 shiv:
-                        </li>
-                        <ul type="circle">
+                        <ul>
                             <li>
                                 <strong>
                                     &lt;script&gt;document.createElement("article");&lt;/script&gt;
@@ -856,7 +846,7 @@
                                 which the browser (IE, in this case) can understand and style
                                 appropriately
                             </li>
-                        </ul>
+                        </ul></li>
                         <li>
                             Creating an entry for every element can get a bit heavy, so you can use
                             the

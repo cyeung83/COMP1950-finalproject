@@ -276,6 +276,14 @@ main {
 }
 
 /* lesson landing page styles start */
+.lesson-content {
+  margin: 16px;
+}
+.lesson-content pre {
+  white-space: pre-line;
+  margin-left: 16px;
+}
+
 .lesson-link-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -385,8 +393,8 @@ main {
   color: white;
 }
 
-.mainpagearticles article h2 a:hover, a:focus, a:active {
-  color: #f3f300;
+.mainpagearticles article h2 a:hover, a:focus {
+  color: darkcyan;
 }
 
 /* article button */
