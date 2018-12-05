@@ -4,6 +4,11 @@ main {
 
 /* lesson landing page styles start */
 
+.lesson-content {
+    pre {
+        white-space: pre-line;   
+    }
+}
 .lesson-link-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
